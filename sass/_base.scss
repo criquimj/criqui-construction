@@ -72,7 +72,7 @@ body {
 }
 
 .container-background {
-  background-color: rgb(235, 235, 235);
+  background-color: #ebebeb;
 }
 
 .header {
@@ -91,33 +91,45 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   &__logo-box {
+    display: flex;
+    justify-content: flex-start;
     padding: 1.5rem;
   }
 
   &__logo {
-    height: 6rem;
+    height: 10rem;
+    filter: brightness(0%);
+    opacity: 70%;
   }
 
   &__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    width: 70rem;
+    // position: absolute;
+    // top: 40%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
   }
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14rem;
+}
+
 .heading-primary {
-  color: rgb(230, 230, 230);
+  // color: rgb(230, 230, 230);
+  color: white;
   text-transform: uppercase;
   margin-bottom: 6rem;
 
   &--main {
     display: block;
-    font-size: 6rem;
+    font-size: 9rem;
     font-weight: 400;
     letter-spacing: 3rem;
+    margin-left: 3rem;
     /* animation shorthand */
     animation: appearMoveInLeft 1s ease-out;
 
@@ -127,9 +139,10 @@ body {
   }
   &--sub {
     display: block;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 700;
     letter-spacing: 1.74rem;
+    margin-left: 1.74rem;
     animation-name: appearMoveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -212,10 +225,12 @@ body {
   }
 
   &--white {
-    background-color: var(--color-white);
+    // background-color: var(--color-white);
+    background-color: #faf5e6;
 
     &::after {
-      background-color: var(--color-white);
+      // background-color: var(--color-white);
+      background-color: #faf5e6;
     }
   }
 
@@ -237,4 +252,8 @@ body {
     /* applies properties of 0% before load */
     animation-fill-mode: backwards;
   }
+}
+
+.main {
+  height: 70rem;
 }
