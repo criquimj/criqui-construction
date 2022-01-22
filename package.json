@@ -1,0 +1,23 @@
+{
+  "name": "criqui-construction",
+  "version": "1.0.0",
+  "description": "Criqui Construction Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "concurrently --kill-others \"npm run devserver\" \"npm run watch:sass\"",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "concurrently --kill-others  \"npm run compile:sass\" \"npm run prefix:css\" \"npm run compress:css\""
+  },
+  "author": "Matthew Criqui",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "concurrently": "^7.0.0",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^9.1.0"
+  }
+}
