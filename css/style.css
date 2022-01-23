@@ -55,12 +55,10 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  height: 100vh;
-  width: 100%;
   font-weight: 400;
   line-height: 1.6;
   color: #555;
-  background-image: url(../img/pexels-photo-1097016.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pexels-photo-1097016.jpeg);
   background-size: cover;
   padding: 4.5rem; }
 
@@ -74,7 +72,8 @@ body {
   background-image: linear-gradient(to right bottom, rgba(204, 153, 0, 0.8), rgba(230, 204, 128, 0.8)), url(../img/photo-1603814744509-57b74d605fc2.jpeg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  margin-bottom: 9rem; }
   .header__logo-box {
     display: flex;
     justify-content: flex-start;
@@ -157,18 +156,18 @@ body {
   border-radius: 4rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.8rem; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.2); }
+  box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.5); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
 .btn:active {
   transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(var(--color-black), 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(var(--color-black), 0.4); }
 
 .btn--white {
   background-color: #faf5e6; }
@@ -193,4 +192,40 @@ body {
   animation-fill-mode: backwards; }
 
 .main {
-  height: 70rem; }
+  max-width: 100rem;
+  margin: 0 auto; }
+
+.services__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  margin-bottom: 7rem; }
+
+.services__img {
+  height: 35rem; }
+
+.services__detail-p {
+  font-size: 2.25rem;
+  margin-bottom: 3rem;
+  line-height: 1.2; }
+
+.services__list {
+  list-style: none;
+  font-size: 2rem;
+  line-height: 1.8; }
+
+.services__heading-secondary {
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  font-size: 4.5rem;
+  border-bottom: 3px solid rgba(204, 153, 0, 0.8); }
+
+.services__heading-tertiary {
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 2.5rem;
+  line-height: 1; }
