@@ -57,10 +57,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: #555;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pexels-photo-1097016.jpeg);
-  background-size: cover;
-  padding: 4.5rem; }
+  color: #555; }
 
 .container-background {
   background-color: #ebebeb; }
@@ -69,7 +66,7 @@ body {
   position: relative;
   background-color: #ebebeb;
   height: 90vh;
-  background-image: linear-gradient(to right bottom, rgba(204, 153, 0, 0.8), rgba(230, 204, 128, 0.8)), url(../img/photo-1603814744509-57b74d605fc2.jpeg);
+  background-image: linear-gradient(to left top, rgba(146, 110, 0, 0.8), rgba(214, 174, 54, 0.8)), url(../img/photo-1603814744509-57b74d605fc2.jpeg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -153,21 +150,20 @@ body {
   text-transform: uppercase;
   color: inherit;
   padding: 1.5rem 4rem;
-  border-radius: 4rem;
   transition: all 0.2s;
   position: relative;
   font-size: 1.8rem; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.5); }
+  box-shadow: var(--shadow-dark); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
 .btn:active {
   transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(var(--color-black), 0.4); }
+  box-shadow: var(--shadow-light); }
 
 .btn--white {
   background-color: #faf5e6; }
@@ -179,7 +175,6 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 4rem;
   position: absolute;
   top: 0;
   left: 0;
