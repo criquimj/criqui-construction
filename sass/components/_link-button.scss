@@ -14,7 +14,7 @@
 
   &:hover {
     transform: translateY(-0.3rem);
-    box-shadow: $shadow-dark;
+    box-shadow: $shadow-medium;
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;

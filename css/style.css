@@ -88,7 +88,7 @@ body {
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
@@ -129,8 +129,8 @@ body {
   animation-fill-mode: backwards; }
 
 .header {
-  height: 90vh;
-  background-image: linear-gradient(to left top, rgba(150, 121, 36, 0.9), rgba(214, 173, 51, 0.9)), url(../../img/hero.jpeg);
+  height: 95vh;
+  background-image: linear-gradient(to left top, rgba(150, 121, 36, 0.85), rgba(214, 173, 51, 0.85)), url(../../img/hero.jpeg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -140,9 +140,9 @@ body {
     justify-content: flex-start;
     padding: 1.5rem; }
   .header__logo {
-    height: 10rem;
-    filter: invert(0); }
+    height: 8rem;
+    filter: invert(0.1); }
   .header__container {
-    margin-top: 14rem; }
+    margin-top: 8rem; }
   .header__text-box {
     text-align: center; }

@@ -1,9 +1,9 @@
 .header {
-  height: 90vh;
+  height: 95vh;
   background-image: linear-gradient(
       to left top,
-      rgba($color-primary-dark, 0.9),
-      rgba($color-primary, 0.9)
+      rgba($color-primary-dark, 0.85),
+      rgba($color-primary, 0.85)
     ),
     url(../../img/hero.jpeg);
   background-size: cover;
@@ -19,12 +19,12 @@
   }
 
   &__logo {
-    height: 10rem;
-    filter: invert(0);
+    height: 8rem;
+    filter: invert(0.1);
   }
 
   &__container {
-    margin-top: 14rem;
+    margin-top: 8rem;
   }
 
   &__text-box {
