@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 12rem;
+  height: 10rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -47,6 +47,7 @@
     font-size: 1.6rem;
     color: $color-white;
     text-transform: uppercase;
+    border-radius: 3px;
     border: 1px solid $color-primary;
     padding: 0.5rem 1rem;
     transition: all 0.3s;
