@@ -130,7 +130,7 @@ body {
   animation-fill-mode: backwards; }
 
 .nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 12rem;
@@ -139,11 +139,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  z-index: 100; }
-  .nav--default {
-    background: transparent; }
+  z-index: 100;
+  background-color: transparent; }
   .nav--scrolling {
-    background: #fff; }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: fixed;
+    top: 0;
+    left: 0; }
   .nav__logo {
     height: 8rem;
     width: 19.1rem;
@@ -190,6 +192,8 @@ body {
     background-color: white;
     color: black;
     border-color: white; }
+  .nav__link--request:active {
+    transform: translateY(1px); }
   .nav__link--logo:link, .nav__link--logo:visited, .nav__link--logo:hover {
     padding: 0;
     border: none; }
@@ -203,3 +207,6 @@ body {
   margin-bottom: 9rem; }
   .header__text-box {
     text-align: center; }
+
+.section-services {
+  height: 200rem; }

@@ -1,5 +1,5 @@
 .nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 12rem;
@@ -9,13 +9,16 @@
   align-items: center;
   padding: 1rem 2rem;
   z-index: 100;
-
-  &--default {
-    background: transparent;
-  }
+  background-color: transparent;
 
   &--scrolling {
-    background: $color-white;
+    background-image: linear-gradient(
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.5)
+    );
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   &__logo {
@@ -86,6 +89,7 @@
   }
 
   &__link--request:active {
+    transform: translateY(1px);
   }
 
   &__link--logo:link,
