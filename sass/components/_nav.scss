@@ -41,6 +41,7 @@
 
   &__link--main:link,
   &__link--main:visited {
+    min-width: 12rem;
     display: inline-block;
     text-decoration: none;
     font-size: 1.6rem;
@@ -49,6 +50,7 @@
     border: 1px solid $color-primary;
     padding: 0.5rem 1rem;
     transition: all 0.3s;
+    text-align: center;
   }
 
   &__link--main:hover {

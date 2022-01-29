@@ -5,7 +5,6 @@ const stickyNav = () => {
   const obs = new IntersectionObserver(
     (entries) => {
       const ent = entries[0];
-      console.log(ent);
       const navBar = document.querySelector(".nav");
 
       !ent.isIntersecting
