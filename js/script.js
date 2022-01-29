@@ -1,8 +1,6 @@
-console.log("testing connection");
-
 const stickyNav = () => {
   const headerSection = document.querySelector(".header");
-  const obs = new IntersectionObserver(
+  const observer = new IntersectionObserver(
     (entries) => {
       const ent = entries[0];
       const navBar = document.querySelector(".nav");
@@ -13,7 +11,6 @@ const stickyNav = () => {
     },
     { root: null, threshold: 0, rootMargin: "-200px" }
   );
-  obs.observe(headerSection);
+  observer.observe(headerSection);
 };
-
 stickyNav();
