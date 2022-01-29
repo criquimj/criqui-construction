@@ -33,12 +33,6 @@
     font-weight: 400;
     letter-spacing: 1.6rem;
     margin-left: 1.6rem;
-    /* animation shorthand */
-    // animation: appearMoveInLeft 1s ease-out;
-
-    /* animation-name: appearMoveInLeft;
-        animation-duration: .9s;
-        animation-timing-function: ease-out; */
   }
   &--sub {
     display: block;
@@ -46,11 +40,6 @@
     font-weight: 700;
     letter-spacing: 1.74rem;
     margin-left: 1.74rem;
-    // animation-name: appearMoveInRight;
-    // animation-duration: 1s;
-    // animation-timing-function: ease-out;
-    /* animation-iteration-count: 3; */
-    /* animation-delay: 3s; */
   }
 }
 
