@@ -1,0 +1,103 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 100;
+  background-color: transparent;
+
+  &--scrolling {
+    background-image: linear-gradient(
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.5)
+    );
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  &__logo {
+    height: 8rem;
+    width: 19.1rem;
+    filter: invert(1);
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  &__item {
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  &__link--main:link,
+  &__link--main:visited {
+    min-width: 12rem;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-white;
+    text-transform: uppercase;
+    border: 1px solid $color-primary;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+    text-align: center;
+  }
+
+  &__link--main:hover {
+    background-color: $color-primary;
+    color: black;
+  }
+
+  &__link--main:active {
+    transform: translateY(1px);
+  }
+
+  &__request-box {
+    width: 19.1rem;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  &__link--request:link,
+  &__link--request:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-white;
+    text-transform: uppercase;
+    border: 1px solid $color-primary;
+
+    display: block;
+    text-align: center;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s;
+  }
+
+  &__link--request:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+  }
+
+  &__link--request:active {
+    transform: translateY(1px);
+  }
+
+  &__link--logo:link,
+  &__link--logo:visited,
+  &__link--logo:hover {
+    padding: 0;
+    border: none;
+  }
+}

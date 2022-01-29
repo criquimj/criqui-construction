@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,38 +18,59 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="js/script.js"></script>
     <title>Criqui Construction &mdash; Quality service since 1962</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo-box">
-        <img
-          src="./img/logo.png"
-          alt="Criqui Construction logo"
-          class="header__logo"
-        />
-      </div>
-
-      <div class="header__container flex-container--center">
-        <div class="header__text-box">
-          <h1 class="heading-primary">
-            <span class="heading-primary--main">Got dirt?</span>
-            <span class="heading-primary--sub">We'll move it.</span>
-          </h1>
-
-          <a class="btn btn--light btn--animated" href="#">request a quote</a>
+    <div class="scrolling-box">
+      <nav class="nav">
+        <div class="nav__logo-box">
+          <a href="#" class="nav__link nav__link--logo"
+            ><img
+              src="./img/logo.png"
+              alt="Criqui Construction logo"
+              class="nav__logo"
+          /></a>
         </div>
-      </div>
-    </header>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link--main">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link--main">Contact us</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link--main">About us</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link--main">Careers</a>
+          </li>
+        </ul>
+        <div class="nav__request-box">
+          <a href="#" class="nav__link nav__link--request">Get started</a>
+        </div>
+      </nav>
 
-    <main class="main">
-      <section class="section-services">Services</section>
-      <section class="section-about">About</section>
-      <section class="section-contact">Contact</section>
-    </main>
+      <header class="header">
+        <div class="header__container flex-container--center">
+          <div class="header__text-box">
+            <h1 class="heading-primary">
+              <span class="heading-primary--main">Quality Earthwork</span>
+              <span class="heading-primary--sub">Since 1962</span>
+            </h1>
 
-    <footer class="footer">Footer here</footer>
+            <a class="btn btn--light btn--animated" href="#">request a quote</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="section-services">Services</section>
+        <section class="section-about">About</section>
+        <section class="section-contact">Contact</section>
+      </main>
+
+      <footer class="footer">Footer here</footer>
+    </div>
   </body>
 </html>
