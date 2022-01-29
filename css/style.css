@@ -44,7 +44,7 @@ body {
     transform: translateY(0); } }
 
 .heading-primary {
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
   text-transform: uppercase;
   margin-bottom: 6rem; }
   .heading-primary--main {
@@ -54,7 +54,6 @@ body {
     letter-spacing: 3rem;
     margin-left: 3rem;
     /* animation shorthand */
-    animation: appearMoveInLeft 1s ease-out;
     /* animation-name: appearMoveInLeft;
         animation-duration: .9s;
         animation-timing-function: ease-out; */ }
@@ -64,9 +63,6 @@ body {
     font-weight: 700;
     letter-spacing: 1.74rem;
     margin-left: 1.74rem;
-    animation-name: appearMoveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */ }
 
@@ -84,25 +80,25 @@ body {
   border-radius: 3px;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  border: 2px solid #d6ad33; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0; }
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+  background-color: #d6ad33;
+  color: #fff; }
 
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06); }
 
 .btn--light {
-  background-color: #faf5e6;
-  color: #555; }
+  background-color: transparent;
+  color: #fff; }
   .btn--light::after {
-    background-color: #faf5e6;
-    color: #555; }
+    background-color: transparent;
+    color: #fff; }
 
 .btn--dark {
   background-color: #000;
@@ -130,7 +126,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to left top, rgba(150, 121, 36, 0.85), rgba(214, 173, 51, 0.85)), url(../../img/hero.jpeg);
+  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/hero.jpeg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -141,7 +137,7 @@ body {
     padding: 1.5rem; }
   .header__logo {
     height: 8rem;
-    filter: invert(0.1); }
+    filter: invert(1); }
   .header__container {
     margin-top: 8rem; }
   .header__text-box {
