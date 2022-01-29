@@ -9,7 +9,7 @@ const stickyNav = () => {
         ? navBar.classList.add("nav--scrolling")
         : navBar.classList.remove("nav--scrolling");
     },
-    { root: null, threshold: 0, rootMargin: "-200px" }
+    { root: null, threshold: 0, rootMargin: "500px" }
   );
   observer.observe(headerSection);
 };
