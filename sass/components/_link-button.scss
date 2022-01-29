@@ -10,15 +10,18 @@
     transition: all 0.2s;
     position: relative;
     font-size: 1.8rem;
+    border: 2px solid $color-primary;
   }
 
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: $shadow-medium;
-    &::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-    }
+    // &::after {
+    //   transform: scaleX(1.4) scaleY(1.6);
+    //   opacity: 0;
+    // }
+    background-color: $color-primary;
+    color: $color-white;
   }
 
   &:active {
@@ -27,12 +30,12 @@
   }
 
   &--light {
-    background-color: $color-primary-super-light;
-    color: $color-grey-dark-2;
+    background-color: transparent;
+    color: $color-white;
 
     &::after {
-      background-color: $color-primary-super-light;
-      color: $color-grey-dark-2;
+      background-color: transparent;
+      color: $color-white;
     }
   }
 
