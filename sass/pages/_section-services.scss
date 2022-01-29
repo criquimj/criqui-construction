@@ -1,5 +1,13 @@
 .section-services {
   height: 200rem;
   background-color: $color-grey-light-1;
+  padding-top: 24rem;
   margin-top: -30rem;
+}
+
+.services {
+  &__description {
+    font-size: 1.9rem;
+    text-align: center;
+  }
 }
