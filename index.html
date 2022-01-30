@@ -79,15 +79,25 @@
 
             <div class="services__detail-box">
               <div class="services__selector">
-                <button class="button services__btn">Excavation</button>
-                <button class="button services__btn">Demolition</button>
-                <button class="button services__btn">
+                <button
+                  id="exc-btn"
+                  class="button services__btn services__btn--active"
+                >
+                  Excavation
+                </button>
+                <button id="dem-btn" class="button services__btn">
+                  Demolition
+                </button>
+                <button id="env-btn" class="button services__btn">
                   Environmental Sustainability
                 </button>
-                <button class="button services__btn">Railroad Services</button>
+                <button id="rail-btn" class="button services__btn">
+                  Railroad Services
+                </button>
               </div>
               <div class="services__display">
-                <h3 class="heading-tertiary services__display-heading">
+                <div class="services__display-overlay"></div>
+                <!-- <h3 class="heading-tertiary services__display-heading">
                   Excavation Services
                 </h3>
                 <p class="services__text-detail">
@@ -156,7 +166,7 @@
                       Septic systems & sewer lagoons
                     </li>
                   </ul>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

@@ -159,7 +159,7 @@ body {
   z-index: 100;
   background-color: transparent; }
   .nav--scrolling {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
     position: fixed;
     top: 0;
     left: 0; }
@@ -258,21 +258,26 @@ body {
     outline: none;
     border: 1px solid #d6ad33;
     background-color: transparent;
+    background-color: rgba(235, 235, 235, 0.06);
     text-transform: uppercase;
     transition: all 0.3s;
     border-radius: 3px; }
     .services__btn:hover {
-      background-color: #d6ad33; }
+      background-color: #d6ad33;
+      color: #2e2d26; }
     .services__btn--active {
-      background-color: #d6ad33; }
+      background-color: #d6ad33;
+      color: #2e2d26; }
   .services__display {
     overflow: hidden;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     height: 65vh;
-    background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/excavator.jpeg);
-    background-size: cover;
-    padding: 2rem 3rem; }
+    background-image: url(../../img/exc-btn.jpeg);
+    background-size: cover; }
+  .services__display-overlay {
+    height: 100%;
+    background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
   .services__display-heading {
     color: #fff;
     font-size: 3.75rem;
