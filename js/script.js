@@ -1,3 +1,145 @@
+const excavationHtml = `<h3 class="heading-tertiary services__display-heading">
+Excavation Services
+</h3>
+<p class="services__text-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Quaerat, dolorum voluptate quidem nam provident earum
+laboriosam accusantium dolores perferendis quod modi ea?
+</p>
+<div class="services__list-container">
+<ul class="services__list">
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon>
+    Excavation, grading and slope work
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon>
+    Basement & foundation excavation
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon
+    >Land clearing
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon>
+    Building pads & site preparation
+  </li>
+</ul>
+<ul class="services__list">
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon
+    >Road and highway construction
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon
+    >Trench digging
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon>
+    Storm sewer & drainage structures
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon>
+    Septic systems & sewer lagoons
+  </li>
+</ul>
+</div>`;
+
+const demoHtml = `<h3 class="heading-tertiary services__display-heading">
+Excavation Services
+</h3>
+<p class="services__text-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Quaerat, dolorum voluptate quidem nam provident earum
+laboriosam accusantium dolores perferendis quod modi ea?
+</p>
+<div class="services__list-container">
+<ul class="services__list">
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon>
+    Excavation, grading and slope work
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon>
+    Basement & foundation excavation
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon
+    >Land clearing
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon>
+    Building pads & site preparation
+  </li>
+</ul>
+<ul class="services__list">
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon
+    >Road and highway construction
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon
+    >Trench digging
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon>
+    Storm sewer & drainage structures
+  </li>
+  <li class="services__list-item">
+    <ion-icon
+      class="services__icon"
+      name="chevron-forward-outline"
+    ></ion-icon>
+    Septic systems & sewer lagoons
+  </li>
+</ul>
+</div>`;
+
 const stickyNav = () => {
   const headerSection = document.querySelector(".header");
   const observer = new IntersectionObserver(
@@ -24,22 +166,19 @@ const railButton = document.querySelector("#rail-btn");
 
 const allServiceButtons = [excButton, demButton, envButton, railButton];
 const servicesDisplay = document.querySelector(".services__display");
-const gradient =
-  "linear-gradient(rgba($color-black, 0.7),rgba($color-black, 0.7))";
-// const displayBackground = servicesDisplay.style.backgroundImage;
-console.log(window.getComputedStyle(servicesDisplay, false));
-
-// servicesDisplay.style.backgroundImage = `linear-gradient(
-//   to left top,
-//   rgba($color-black, 0.7),
-//   rgba($color-black, 0.7)
-// ),
-// url(./img/dem-btn.jpeg)`;
+const displayOverlay = document.querySelector(".services__display-overlay");
 
 allServiceButtons.map((btn) =>
   btn.addEventListener("click", () => {
-    let backgroundImage = `url(./img/${btn.id}.jpeg)`;
-    servicesDisplay.style.backgroundImage = backgroundImage;
+    let curBackgroundImage = `url(./img/${btn.id}.jpeg)`;
+    servicesDisplay.style.backgroundImage = curBackgroundImage;
+
+    let htmlContent = "";
+    displayOverlay.innerHTML = htmlContent;
+
+    if (btn.id === "exc-btn") {
+      htmlContent = excavationHtml;
+    }
 
     const selectedButton = document.querySelector(`#${btn.id}`);
 
@@ -54,5 +193,7 @@ allServiceButtons.map((btn) =>
         nonBtn.classList.remove("services__btn--active")
       );
     }
+
+    displayOverlay.insertAdjacentHTML("afterbegin", htmlContent);
   })
 );
