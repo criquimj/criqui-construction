@@ -1,3 +1,15 @@
+/* 
+0 - 600px: Phone - phone
+600 - 1000px: Tablet Portrait - tab-port
+900 - 1250px: Tablet Landscape - tab-land
+[1250 - 1800px]: Normal desktop 
+1800px +: Big desktop
+*/
+/*
+  @include respond(tab-land) {
+    color: $color-primary;
+  }
+*/
 *,
 *::after,
 *::before {
@@ -64,6 +76,9 @@ body {
     font-weight: 700;
     letter-spacing: 1.74rem;
     margin-left: 1.74rem; }
+  @media only screen and (max-width: 78.12em) {
+    .heading-primary {
+      color: #d6ad33; } }
 
 .heading-secondary {
   position: relative;
