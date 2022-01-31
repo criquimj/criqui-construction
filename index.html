@@ -202,65 +202,73 @@
                 for a tailored quote.
               </p>
             </div>
-            <div class="cta-text-box">
-              <h2 class="heading-secondary">
-                Have an idea or planning a project?
-              </h2>
-              <p class="cta-text">
-                Contact us and our knowledgeable team will be glad to assist.
-              </p>
+            <div class="contact__form-box">
+              <div class="contact__text-box">
+                <h3 class="heading-tertiary contact__form-box__form-heading">
+                  Have an idea or planning a project?
+                </h3>
+                <p class="contact__form-box__text">
+                  Contact us and our knowledgeable team will be glad to assist.
+                </p>
 
-              <form
-                name="contact-cta"
-                class="cta-form"
-                method="POST"
-                data-netlify="true"
-              >
-                <div>
-                  <label for="full-name">Full Name</label>
-                  <input
-                    id="full-name"
-                    required
-                    type="text"
-                    placeholder="Your name"
-                    name="full-name"
-                  />
-                </div>
+                <form
+                  name="contact-cta"
+                  class="contact__form"
+                  method="POST"
+                  data-netlify="true"
+                >
+                  <div class="contact__form__full-name--group">
+                    <label
+                      class="contact__form__full-name--label"
+                      for="full-name"
+                      >Full Name</label
+                    >
+                    <input
+                      class="contact__form__full-name--input"
+                      id="full-name"
+                      required
+                      type="text"
+                      placeholder="Your name"
+                      name="full-name"
+                    />
+                  </div>
 
-                <div>
-                  <label for="email">Email address</label>
-                  <input
-                    id="email"
-                    type="email"
-                    required
-                    placeholder="me@example.com"
-                    name="email"
-                  />
-                </div>
+                  <div class="contact__form__email--group">
+                    <label class="contact__form__email--label" for="email"
+                      >Email address</label
+                    >
+                    <input
+                      class="contact__form__email--input"
+                      id="email"
+                      type="email"
+                      required
+                      placeholder="me@example.com"
+                      name="email"
+                    />
+                  </div>
 
-                <div>
-                  <label for="referral">Where did you hear about us?</label>
-                  <select
-                    id="referral"
-                    name="referral"
-                    required
-                    name="referral-select"
-                  >
-                    <option value="">Please choose one option:</option>
-                    <option value="friends and family">
-                      Friends and family
-                    </option>
-                    <option value="spotify">Spotify</option>
-                    <option value="instagram">Instagram</option>
-                    <option value="facebook">Facebook</option>
-                    <option value="youtube">YouTube</option>
-                  </select>
-                </div>
+                  <div class="contact__form__message--group">
+                    <label class="contact__form__message--label" for="message"
+                      >Message</label
+                    >
+                    <textarea
+                      class="contact__form__message--input"
+                      id="message"
+                      name="message"
+                      required
+                      name="message"
+                    ></textarea>
+                  </div>
 
-                <button class="btn btn--form">Send</button>
-              </form>
+                  <button class="button contact__form-btn">Send</button>
+                </form>
+              </div>
+              <div
+                class="contact__form__img-box"
+                role="img"
+                aria-label=""
+              ></div>
             </div>
-            <div class="cta-img-box" role="img" aria-label=""></div>
           </div>
         </section>
       </main>
