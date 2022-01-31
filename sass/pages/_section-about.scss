@@ -1,0 +1,13 @@
+.section-about {
+  height: 200rem;
+  padding-top: 14rem;
+}
+
+.about {
+  max-width: 130rem;
+
+  &__description {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+}
