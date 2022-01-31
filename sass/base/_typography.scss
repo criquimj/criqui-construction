@@ -41,6 +41,10 @@
     letter-spacing: 1.74rem;
     margin-left: 1.74rem;
   }
+
+  @include respond(tab-land) {
+    color: $color-primary;
+  }
 }
 
 .heading-secondary {
