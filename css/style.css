@@ -224,6 +224,53 @@ body {
     padding: 0;
     border: none; }
 
+.footer {
+  border-top: 1px solid rgba(153, 153, 153, 0.5);
+  display: flex;
+  justify-content: center;
+  color: #ebebeb;
+  padding: 7rem 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  gap: 7rem; }
+  .footer__content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 40rem; }
+  .footer__content-right {
+    width: 40rem; }
+  .footer__divider {
+    height: 20rem;
+    width: 2px;
+    background-color: #d6ad33; }
+  .footer__logo {
+    filter: invert(1);
+    height: 8rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #ebebeb; }
+  .footer__social-links {
+    list-style: none;
+    display: flex;
+    gap: 1.4rem; }
+  .footer__copyright {
+    font-size: 1.4rem;
+    color: rgba(235, 235, 235, 0.7); }
+  .footer__social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 50%; }
+  .footer__heading {
+    font-size: 2.5rem; }
+  .footer__address {
+    font-size: 1.5rem; }
+  .footer__contact-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/hero.jpeg);
@@ -312,7 +359,8 @@ body {
     color: #d6ad33; }
 
 .section-contact {
-  padding-top: 14rem; }
+  padding-top: 14rem;
+  margin-bottom: 10rem; }
 
 .contact {
   flex-direction: column;
