@@ -412,7 +412,8 @@ body {
     box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5); }
 
 .section-about {
-  padding-top: 14rem; }
+  padding-top: 14rem;
+  margin-bottom: 10rem; }
 
 .about {
   max-width: 130rem;
@@ -427,14 +428,13 @@ body {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     align-items: center;
-    background-color: #2e2d26;
     border-radius: 3px;
     overflow: hidden;
     padding: 2.5rem; }
   .about__content-container {
     padding: 3rem; }
   .about__text-content {
-    color: #fff;
+    color: #2e2d26;
     font-size: 2.5rem;
     font-weight: 100; }
     .about__text-content:first-of-type {

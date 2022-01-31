@@ -1,5 +1,6 @@
 .section-about {
   padding-top: 14rem;
+  margin-bottom: 10rem;
 }
 
 .about {
@@ -20,7 +21,11 @@
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     align-items: center;
-    background-color: $color-dark;
+    // background-image: linear-gradient(
+    //   to right bottom,
+    //   rgba($color-black, 0.3),
+    //   rgba($color-black, 0.3)
+    // );
     border-radius: 3px;
     overflow: hidden;
     padding: 2.5rem;
@@ -31,7 +36,7 @@
   }
 
   &__text-content {
-    color: $color-white;
+    color: $color-dark;
     font-size: 2.5rem;
     font-weight: 100;
 
