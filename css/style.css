@@ -418,7 +418,29 @@ body {
 
 .about {
   max-width: 130rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  flex-direction: column; }
+  .about__heading-box {
+    margin-bottom: 3rem; }
   .about__description {
     font-size: 2.1rem;
     text-align: center; }
+  .about__main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #2e2d26;
+    border-radius: 3px;
+    overflow: hidden; }
+  .about__content-container {
+    padding: 3rem; }
+  .about__text-content {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 100; }
+    .about__text-content:first-of-type {
+      margin-bottom: 2rem; }
+  .about__img-container {
+    position: relative;
+    background-image: linear-gradient(rgba(46, 45, 38, 0.5), rgba(46, 45, 38, 0.5)); }
+  .about__side-img {
+    display: block; }
