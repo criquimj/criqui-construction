@@ -37,17 +37,19 @@
             <a href="#section-services" class="nav__link--main">Services</a>
           </li>
           <li class="nav__item">
-            <a href="#section-contact" class="nav__link--main">Contact us</a>
+            <a href="#section-about" class="nav__link--main">About us</a>
           </li>
           <li class="nav__item">
-            <a href="#section-about" class="nav__link--main">About us</a>
+            <a href="#section-contact" class="nav__link--main">Contact us</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link--main">Careers</a>
           </li>
         </ul>
         <div class="nav__request-box">
-          <a href="#" class="nav__link nav__link--request">Get started</a>
+          <a href="#section-contact" class="nav__link nav__link--request"
+            >Get started</a
+          >
         </div>
       </nav>
 
@@ -59,7 +61,9 @@
               <span class="heading-primary--sub">Since 1962</span>
             </h1>
 
-            <a class="btn btn--light btn--animated" href="#">request a quote</a>
+            <a class="btn btn--light btn--animated" href="#section-contact"
+              >request a quote</a
+            >
           </div>
         </div>
       </header>
@@ -174,6 +178,19 @@
           </div>
         </section>
 
+        <section id="section-about" class="section-about">
+          <div class="about flex-container">
+            <div class="about__heading-box">
+              <h2 class="heading-secondary heading-secondary--about">
+                About us
+              </h2>
+              <p class="about__description">
+                Family-owned and -operated since 1962
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section id="section-contact" class="section-contact">
           <div class="contact flex-container">
             <div class="contact__heading-box">
@@ -185,19 +202,65 @@
                 for a tailored quote.
               </p>
             </div>
-          </div>
-        </section>
-
-        <section id="section-about" class="section-about">
-          <div class="about flex-container">
-            <div class="about__heading-box">
-              <h2 class="heading-secondary heading-secondary--about">
-                About us
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">
+                Have an idea or planning a project?
               </h2>
-              <p class="about__description">
-                Family-owned and -operated since 1962
+              <p class="cta-text">
+                Contact us and our knowledgeable team will be glad to assist.
               </p>
+
+              <form
+                name="contact-cta"
+                class="cta-form"
+                method="POST"
+                data-netlify="true"
+              >
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    required
+                    type="text"
+                    placeholder="Your name"
+                    name="full-name"
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    required
+                    placeholder="me@example.com"
+                    name="email"
+                  />
+                </div>
+
+                <div>
+                  <label for="referral">Where did you hear about us?</label>
+                  <select
+                    id="referral"
+                    name="referral"
+                    required
+                    name="referral-select"
+                  >
+                    <option value="">Please choose one option:</option>
+                    <option value="friends and family">
+                      Friends and family
+                    </option>
+                    <option value="spotify">Spotify</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="youtube">YouTube</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Send</button>
+              </form>
             </div>
+            <div class="cta-img-box" role="img" aria-label=""></div>
           </div>
         </section>
       </main>
