@@ -224,6 +224,11 @@ body {
     padding: 0;
     border: none; }
 
+.footer {
+  border-top: 1px solid #d6ad33;
+  display: flex;
+  height: 15rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/hero.jpeg);
@@ -312,7 +317,8 @@ body {
     color: #d6ad33; }
 
 .section-contact {
-  padding-top: 14rem; }
+  padding-top: 14rem;
+  margin-bottom: 10rem; }
 
 .contact {
   flex-direction: column;
