@@ -1,0 +1,13 @@
+.section-contact {
+  height: 200rem;
+  padding-top: 14rem;
+}
+
+.contact {
+  max-width: 130rem;
+
+  &__description {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+}

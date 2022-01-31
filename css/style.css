@@ -14,7 +14,8 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: #555; }
+  color: #555;
+  background-color: #ebebeb; }
 
 .scrolling-box {
   scroll-behavior: smooth; }
@@ -92,6 +93,11 @@ body {
 .flex-container {
   display: flex;
   justify-content: center; }
+
+.heading--upper {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 2.5rem !important; }
 
 .btn:link, .btn:visited {
   /* set to inline-block because it's an anchor element */
@@ -229,10 +235,8 @@ body {
     text-align: center; }
 
 .section-services {
-  height: 200rem;
   background-color: #ebebeb;
-  padding-top: 24rem;
-  margin-top: -30rem; }
+  padding-top: 5rem; }
 
 .services {
   flex-direction: column;
@@ -272,7 +276,7 @@ body {
     overflow: hidden;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    height: 65vh;
+    height: 75vh;
     background-image: url(../../img/exc-btn.jpeg);
     background-size: cover; }
   .services__display-overlay {
@@ -306,3 +310,23 @@ body {
     font-size: 2.2rem; }
   .services__icon {
     color: #d6ad33; }
+
+.section-contact {
+  height: 200rem;
+  padding-top: 14rem; }
+
+.contact {
+  max-width: 130rem; }
+  .contact__description {
+    font-size: 2.1rem;
+    text-align: center; }
+
+.section-about {
+  height: 200rem;
+  padding-top: 14rem; }
+
+.about {
+  max-width: 130rem; }
+  .about__description {
+    font-size: 2.1rem;
+    text-align: center; }

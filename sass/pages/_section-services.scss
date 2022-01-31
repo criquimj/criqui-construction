@@ -1,8 +1,6 @@
 .section-services {
-  height: 200rem;
   background-color: $color-grey-light-1;
-  padding-top: 24rem;
-  margin-top: -30rem;
+  padding-top: 5rem;
 }
 
 .services {
@@ -60,7 +58,7 @@
     overflow: hidden;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    height: 65vh;
+    height: 75vh;
     background-image: url(../../img/exc-btn.jpeg);
     background-size: cover;
   }
