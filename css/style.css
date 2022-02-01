@@ -310,7 +310,8 @@ body {
   color: #ebebeb;
   padding: 7rem 2rem;
   background-color: #1e1e1e;
-  gap: 7rem; }
+  gap: 7rem;
+  margin-top: 10rem; }
   .footer__divider {
     height: 20rem;
     width: 2px;
@@ -394,8 +395,7 @@ body {
     text-align: center; }
 
 .section-services {
-  background-color: #ebebeb;
-  padding-top: 5rem; }
+  background-color: #ebebeb; }
 
 .services {
   flex-direction: column;
@@ -500,8 +500,7 @@ body {
     color: #d6ad33; }
 
 .section-contact {
-  padding-top: 14rem;
-  margin-bottom: 10rem; }
+  padding-top: 20rem; }
 
 .contact {
   flex-direction: column;
@@ -628,8 +627,7 @@ body {
     box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5); }
 
 .section-about {
-  padding-top: 14rem;
-  margin-bottom: 10rem; }
+  padding-top: 20rem; }
 
 .about {
   max-width: 130rem;
