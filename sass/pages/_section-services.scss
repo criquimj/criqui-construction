@@ -18,12 +18,15 @@
   }
 
   &__selector {
-    // border: 3px solid royalblue;
     display: flex;
     justify-content: center;
     gap: 2rem;
     padding: 3rem 2rem;
     background-color: rgba($color-black, 0.9);
+
+    @include respond(md-phone) {
+      flex-direction: column;
+    }
   }
 
   &__btn {
@@ -36,12 +39,19 @@
     border: 1px solid $color-primary;
     background-color: transparent;
     background-color: rgba($color-grey-light-1, 0.06);
-    // background-color: rgba($color-black, 0.5);
-    // border: 1px solid $color-white;
-    // background-color: transparent;
     text-transform: uppercase;
     transition: all 0.3s;
     border-radius: 3px;
+
+    @include respond(lg-phone) {
+      font-size: 1.75rem;
+    }
+
+    @include respond(md-phone) {
+      font-size: 1;
+      padding: 1.5rem 1.7rem;
+      min-width: 15rem;
+    }
 
     &:hover {
       background-color: $color-primary;
@@ -58,9 +68,13 @@
     overflow: hidden;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    height: 58vh;
+    height: 55rem;
     background-image: url(../../img/exc-btn.jpeg);
     background-size: cover;
+
+    @include respond(md-phone) {
+      height: 80rem;
+    }
   }
 
   &__display-overlay {
@@ -86,12 +100,22 @@
     color: $color-white;
     font-size: 1.9rem;
     margin-bottom: 1.5rem;
+
+    @include respond(md-phone) {
+      font-size: 1.6rem;
+    }
   }
 
   &__list-container {
     margin-top: 7rem;
     display: flex;
     justify-content: space-around;
+
+    @include respond(md-phone) {
+      flex-direction: column;
+      margin: 3.5rem auto;
+      width: 100%;
+    }
   }
 
   &__list {
@@ -99,6 +123,10 @@
     display: flex;
     flex-direction: column;
     line-height: 2.2;
+    @include respond(md-phone) {
+      margin: 0 auto;
+      width: 50rem;
+    }
   }
 
   &__list-item {
@@ -106,6 +134,10 @@
     align-items: center;
     color: $color-white;
     font-size: 2.2rem;
+
+    @include respond(lg-phone) {
+      font-size: 1.75rem;
+    }
   }
 
   &__icon {
