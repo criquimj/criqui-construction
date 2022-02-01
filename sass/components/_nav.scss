@@ -10,9 +10,19 @@
   padding: 0 4.8rem;
   position: relative;
 
+  @include respond(sm-phone) {
+    padding: 0 2rem;
+  }
+
   &__logo {
     height: 8rem;
     filter: invert(1);
+  }
+
+  @include respond(md-phone) {
+    &__logo {
+      height: 6rem;
+    }
   }
 
   &__main-nav-list {

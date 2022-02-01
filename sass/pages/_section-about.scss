@@ -29,6 +29,10 @@
     border-radius: 3px;
     overflow: hidden;
     padding: 2.5rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__content-container {
@@ -49,11 +53,30 @@
     border-radius: 3px;
     padding: 2rem;
     overflow: hidden;
+    width: 100%;
   }
   &__side-img {
     display: block;
     border-radius: 3px;
     outline: 3px solid $color-primary;
     outline-offset: 1rem;
+    width: 100%;
+  }
+
+  @include respond(tab-port) {
+    &__img-container {
+      border-radius: 3px;
+      padding: 2rem;
+      overflow: hidden;
+      width: 60%;
+      justify-self: center;
+    }
+    &__side-img {
+      display: block;
+      border-radius: 3px;
+      outline: 3px solid $color-primary;
+      outline-offset: 1rem;
+      width: 100%;
+    }
   }
 }

@@ -41,6 +41,40 @@
     letter-spacing: 1.74rem;
     margin-left: 1.74rem;
   }
+
+  @include respond(lg-phone) {
+    &--main {
+      font-size: 3.8rem;
+      letter-spacing: 1.3rem;
+      margin-left: 1.3rem;
+    }
+    &--sub {
+      font-size: 2rem;
+      letter-spacing: 1.74rem;
+      margin-left: 1.74rem;
+    }
+  }
+
+  @include respond(md-phone) {
+    &--main {
+      font-size: 3rem;
+      letter-spacing: 1rem;
+      margin-left: 1rem;
+    }
+    &--sub {
+      font-size: 2rem;
+      letter-spacing: 1rem;
+      margin-left: 1rem;
+    }
+  }
+  @include respond(sm-phone) {
+    &--main {
+      font-size: 2rem;
+    }
+    &--sub {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .heading-secondary {

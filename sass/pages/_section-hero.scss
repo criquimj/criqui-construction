@@ -9,8 +9,14 @@
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
   margin-bottom: 9rem;
+
+  @include respond(md-phone) {
+    height: 85vh;
+  }
+  @include respond(sm-phone) {
+    height: 80vh;
+  }
 
   &__text-box {
     text-align: center;

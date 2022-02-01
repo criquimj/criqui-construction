@@ -21,6 +21,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 55%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -76,6 +79,29 @@ body {
     font-weight: 700;
     letter-spacing: 1.74rem;
     margin-left: 1.74rem; }
+  @media only screen and (max-width: 53.12em) {
+    .heading-primary--main {
+      font-size: 3.8rem;
+      letter-spacing: 1.3rem;
+      margin-left: 1.3rem; }
+    .heading-primary--sub {
+      font-size: 2rem;
+      letter-spacing: 1.74rem;
+      margin-left: 1.74rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--main {
+      font-size: 3rem;
+      letter-spacing: 1rem;
+      margin-left: 1rem; }
+    .heading-primary--sub {
+      font-size: 2rem;
+      letter-spacing: 1rem;
+      margin-left: 1rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-primary--main {
+      font-size: 2rem; }
+    .heading-primary--sub {
+      font-size: 1.5rem; } }
 
 .heading-secondary {
   position: relative;
@@ -173,9 +199,15 @@ body {
   height: 10rem;
   padding: 0 4.8rem;
   position: relative; }
+  @media only screen and (max-width: 25em) {
+    .header {
+      padding: 0 2rem; } }
   .header__logo {
     height: 8rem;
     filter: invert(1); }
+  @media only screen and (max-width: 37.5em) {
+    .header__logo {
+      height: 6rem; } }
   .header__main-nav-list {
     list-style: none;
     display: flex;
@@ -336,6 +368,12 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   margin-bottom: 9rem; }
+  @media only screen and (max-width: 37.5em) {
+    .hero {
+      height: 85vh; } }
+  @media only screen and (max-width: 25em) {
+    .hero {
+      height: 80vh; } }
   .hero__text-box {
     text-align: center; }
 
@@ -537,6 +575,9 @@ body {
     border-radius: 3px;
     overflow: hidden;
     padding: 2.5rem; }
+    @media only screen and (max-width: 62.5em) {
+      .about__main-content {
+        grid-template-columns: 1fr; } }
   .about__content-container {
     padding: 3rem; }
   .about__text-content {
@@ -548,9 +589,24 @@ body {
   .about__img-container {
     border-radius: 3px;
     padding: 2rem;
-    overflow: hidden; }
+    overflow: hidden;
+    width: 100%; }
   .about__side-img {
     display: block;
     border-radius: 3px;
     outline: 3px solid #d6ad33;
-    outline-offset: 1rem; }
+    outline-offset: 1rem;
+    width: 100%; }
+  @media only screen and (max-width: 62.5em) {
+    .about__img-container {
+      border-radius: 3px;
+      padding: 2rem;
+      overflow: hidden;
+      width: 60%;
+      justify-self: center; }
+    .about__side-img {
+      display: block;
+      border-radius: 3px;
+      outline: 3px solid #d6ad33;
+      outline-offset: 1rem;
+      width: 100%; } }
