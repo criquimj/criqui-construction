@@ -247,22 +247,29 @@ Criqui Construction has contracted for BNSF Railway for over 20 years [since 19X
 </ul>
 </div>`;
 
+// MOBILE NAV OPEN/CLOSE
+const mobileNavButton = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+mobileNavButton.addEventListener("click", () => {
+  headerEl.classList.toggle("nav-open");
+});
+
 // STICKY NAVIGATION
 
 const stickyNav = () => {
-  const headerSection = document.querySelector(".header");
+  const heroSection = document.querySelector(".hero");
   const observer = new IntersectionObserver(
     (entries) => {
       const ent = entries[0];
-      const navBar = document.querySelector(".nav");
+      const navBar = document.querySelector(".header");
 
       !ent.isIntersecting
-        ? navBar.classList.add("nav--scrolling")
-        : navBar.classList.remove("nav--scrolling");
+        ? navBar.classList.add("header--scrolling")
+        : navBar.classList.remove("header--scrolling");
     },
     { root: null, threshold: 0, rootMargin: "500px" }
   );
-  observer.observe(headerSection);
+  observer.observe(heroSection);
 };
 stickyNav();
 

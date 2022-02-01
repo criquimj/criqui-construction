@@ -23,39 +23,30 @@
   </head>
   <body>
     <div class="scrolling-box">
-      <nav class="nav">
-        <div class="nav__logo-box">
-          <a href="#" class="nav__link nav__link--logo"
-            ><img
-              src="./img/logo.png"
-              alt="Criqui Construction logo"
-              class="nav__logo"
-          /></a>
-        </div>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#section-services" class="nav__link--main">Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#section-about" class="nav__link--main">About us</a>
-          </li>
-          <li class="nav__item">
-            <a href="#section-contact" class="nav__link--main">Contact us</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link--main">Careers</a>
-          </li>
-        </ul>
-        <div class="nav__request-box">
-          <a href="#section-contact" class="nav__link nav__link--request"
-            >Get started</a
-          >
-        </div>
-      </nav>
+
 
       <header class="header">
-        <div class="header__container flex-container--center">
-          <div class="header__text-box">
+        <a href="#">
+          <img class="header__logo" src="./img/logo.png" alt="Criqui Construction Inc. logo">
+        </a>
+        <nav class="header__main-nav">
+          <ul class="header__main-nav-list">
+            <li class="header__main-nav-list-item"><a class="header__main-nav-link" href="#section-services">Services</a></li>
+            <li class="header__main-nav-list-item"><a class="header__main-nav-link" href="#section-about">About</a></li>
+            <li class="header__main-nav-list-item"><a class="header__main-nav-link" href="#section-contact">Contact us</a></li>
+            <li class="header__main-nav-list-item"><a class="header__main-nav-link" href="#section-contact">Careers</a></li>
+          </ul>
+        </nav>
+  
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+    
+      <div class="hero">
+        <div class="hero__container flex-container--center">
+          <div class="hero__text-box">
             <h1 class="heading-primary">
               <span class="heading-primary--main">Quality Earthwork</span>
               <span class="heading-primary--sub">Since 1962</span>
@@ -66,7 +57,7 @@
             >
           </div>
         </div>
-      </header>
+      </div>
 
       <main class="main">
         <section id="section-services" class="section-services">
