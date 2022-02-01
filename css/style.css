@@ -168,7 +168,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.84);
+  background-color: #1e1e1e;
   /* Because we want header to be stick later we are using a fixed height */
   height: 10rem;
   padding: 0 4.8rem;
@@ -202,13 +202,12 @@ body {
   .header__main-nav-link:active {
     transform: translateY(1px); }
   .header--scrolling {
-    background-color: rgba(0, 0, 0, 0.75);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background-color: #1e1e1e;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    z-index: 100; }
 
 .btn-mobile-nav {
   border: none;
@@ -276,7 +275,7 @@ body {
   justify-content: center;
   color: #ebebeb;
   padding: 7rem 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #1e1e1e;
   gap: 7rem; }
   .footer__content-left {
     display: flex;
