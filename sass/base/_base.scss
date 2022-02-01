@@ -23,6 +23,12 @@ body {
   line-height: 1.6;
   color: $color-grey-dark-2;
   background-color: $color-grey-light-1;
+  position: relative;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 .scrolling-box {
