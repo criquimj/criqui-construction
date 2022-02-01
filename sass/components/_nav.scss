@@ -1,50 +1,38 @@
-.nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 10rem;
-  width: 100%;
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  z-index: 100;
-  background-color: transparent;
-
-  &--scrolling {
-    background-image: linear-gradient(
-      rgba($color-black, 0.85),
-      rgba($color-black, 0.85)
-    );
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
+  background-color: $color-main-dark;
+  // -webkit-backdrop-filter: blur(10px);
+  // backdrop-filter: blur(10px);
+  /* Because we want header to be stick later we are using a fixed height */
+  height: 10rem;
+  padding: 0 4.8rem;
+  position: relative;
 
   &__logo {
     height: 8rem;
-    width: 19.1rem;
     filter: invert(1);
   }
 
-  &__list {
+  &__main-nav-list {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 3rem;
   }
 
-  &__item {
+  &__main-nav-list-item {
     border-radius: 3px;
     overflow: hidden;
   }
 
-  &__link--main:link,
-  &__link--main:visited {
-    min-width: 12rem;
-    display: inline-block;
+  &__main-nav-link:link,
+  &__main-nav-link:visited {
+    min-width: 15rem;
+    display: block;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: $color-white;
     text-transform: uppercase;
     border-radius: 3px;
@@ -54,51 +42,105 @@
     text-align: center;
   }
 
-  &__link--main:hover {
+  &__main-nav-link:hover {
     background-color: $color-primary;
     color: black;
   }
 
-  &__link--main:active {
+  &__main-nav-link:active {
     transform: translateY(1px);
   }
 
-  &__request-box {
-    width: 19.1rem;
-    border-radius: 3px;
-    overflow: hidden;
+  &--scrolling {
+    background-color: $color-main-dark;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    // -webkit-backdrop-filter: blur(10px);
+    // backdrop-filter: blur(10px);
+  }
+}
+
+// MOBILE NAVIGATION
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  z-index: 5500;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: $color-primary;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+@include respond(tab-port) {
+  .header__main-nav {
+    background-color: rgba($color-black, 0.75);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+    /* 1. Hide it visually */
+    opacity: 0;
+
+    /* 2. Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3. Hide it from screen readers */
+    visibility: hidden;
+    z-index: 5000;
+  }
+  .header__main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    width: 100%;
+  }
+  .header__main-nav-list-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
-  &__link--request:link,
-  &__link--request:visited {
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: $color-white;
-    text-transform: uppercase;
-    border: 1px solid $color-primary;
-
+  .btn-mobile-nav {
     display: block;
-    text-align: center;
-    background-color: $color-primary;
-    border: 1px solid $color-primary;
-    padding: 0.75rem 1.5rem;
-    transition: all 0.3s;
   }
 
-  &__link--request:hover {
-    background-color: white;
-    color: black;
-    border-color: white;
+  .nav-open .header__main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+    // -webkit-backdrop-filter: blur(10px);
+    // backdrop-filter: blur(10px);
   }
 
-  &__link--request:active {
-    transform: translateY(1px);
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
   }
 
-  &__link--logo:link,
-  &__link--logo:visited,
-  &__link--logo:hover {
-    padding: 0;
-    border: none;
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
   }
 }
