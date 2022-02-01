@@ -95,7 +95,7 @@
 
 @include respond(tab-port) {
   .header__main-nav {
-    background-color: rgba($color-black, 0.75);
+    background-color: rgba($color-black, 0.45);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     position: absolute;
@@ -127,10 +127,18 @@
     gap: 4.8rem;
     width: 100%;
   }
+
   .header__main-nav-list-item {
     display: flex;
     width: 100%;
     justify-content: center;
+  }
+
+  .header__main-nav-link:link,
+  .header__main-nav-link:visited {
+    width: 85%;
+    font-size: 1.8rem;
+    padding: 2rem 0;
   }
 
   .btn-mobile-nav {
