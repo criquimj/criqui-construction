@@ -380,6 +380,7 @@ body {
 
 .hero {
   height: 95vh;
+  width: 100vw;
   background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/hero.jpeg);
   background-size: cover;
   background-position: top;
