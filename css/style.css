@@ -30,7 +30,12 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #555;
-  background-color: #ebebeb; }
+  background-color: #ebebeb;
+  position: relative; }
+
+html,
+body {
+  overflow-x: hidden; }
 
 .scrolling-box {
   scroll-behavior: smooth; }
@@ -263,7 +268,6 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    transform: translateX(100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,8 +300,7 @@ body {
   .nav-open .header__main-nav {
     opacity: 1;
     pointer-events: auto;
-    visibility: visible;
-    transform: translateX(0%); }
+    visibility: visible; }
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block; }
   .nav-open .icon-mobile-nav[name="menu-outline"] {
@@ -379,6 +382,7 @@ body {
     color: #d6ad33; }
 
 .hero {
+  overflow-x: hidden;
   height: 95vh;
   width: 100vw;
   background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/hero.jpeg);
