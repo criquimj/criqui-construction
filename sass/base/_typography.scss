@@ -84,17 +84,17 @@
   font-size: 4rem;
   letter-spacing: 1.5rem;
   margin-left: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
 
-  &::after {
-    position: absolute;
-    top: 7rem;
-    left: 50%;
-    transform: translateX(-50%);
-    content: "";
-    background-color: $color-primary;
-    height: 3px;
-    width: 30%;
-  }
+  // &::after {
+  //   position: absolute;
+  //   top: 7rem;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   content: "";
+  //   background-color: $color-primary;
+  //   height: 3px;
+  //   width: 30%;
+  // }
 }
