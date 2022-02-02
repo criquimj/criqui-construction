@@ -7,18 +7,35 @@ mobileNavButton.addEventListener("click", () => {
 
 // STICKY NAVIGATION
 
+// const stickyNav = () => {
+//   const heroSection = document.querySelector(".hero");
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       const ent = entries[0];
+//       const navBar = document.querySelector(".header");
+
+//       !ent.isIntersecting
+//         ? navBar.classList.add("header--scrolling")
+//         : navBar.classList.remove("header--scrolling");
+//     },
+//     { root: null, threshold: 0, rootMargin: "500px" }
+//   );
+//   observer.observe(heroSection);
+// };
+// stickyNav();
+
 const stickyNav = () => {
   const heroSection = document.querySelector(".hero");
   const observer = new IntersectionObserver(
     (entries) => {
       const ent = entries[0];
-      const navBar = document.querySelector(".header");
+      const bodyEl = document.querySelector("body");
 
       !ent.isIntersecting
-        ? navBar.classList.add("header--scrolling")
-        : navBar.classList.remove("header--scrolling");
+        ? bodyEl.classList.add("sticky")
+        : bodyEl.classList.remove("sticky");
     },
-    { root: null, threshold: 0, rootMargin: "500px" }
+    { root: null, threshold: 0, rootMargin: "-80px" }
   );
   observer.observe(heroSection);
 };

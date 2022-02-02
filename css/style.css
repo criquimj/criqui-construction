@@ -33,12 +33,20 @@ body {
   background-color: #ebebeb;
   position: relative; }
 
+.sticky .header {
+  background-color: #1e1e1e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; }
+
+.sticky .hero {
+  margin-top: 8rem; }
+
 html,
 body {
   overflow-x: hidden; }
-
-.scrolling-box {
-  scroll-behavior: smooth; }
 
 @keyframes appearMoveInLeft {
   0% {
@@ -198,18 +206,15 @@ body {
   align-items: center;
   background-color: #1e1e1e;
   /* Because we want header to be stick later we are using a fixed height */
-  height: 10rem;
+  height: 8rem;
   padding: 0 4.8rem;
   position: relative; }
   @media only screen and (max-width: 25em) {
     .header {
       padding: 0 2rem; } }
   .header__logo {
-    height: 8rem;
+    height: 6rem;
     filter: invert(1); }
-  @media only screen and (max-width: 37.5em) {
-    .header__logo {
-      height: 6rem; } }
   .header__main-nav-list {
     list-style: none;
     display: flex;
@@ -235,13 +240,6 @@ body {
     color: black; }
   .header__main-nav-link:active {
     transform: translateY(1px); }
-  .header--scrolling {
-    background-color: #1e1e1e;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100; }
 
 .btn-mobile-nav {
   border: none;

@@ -26,11 +26,22 @@ body {
   position: relative;
 }
 
+.sticky .header {
+  background-color: $color-main-dark;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  // -webkit-backdrop-filter: blur(10px);
+  // backdrop-filter: blur(10px);
+}
+
+.sticky .hero {
+  margin-top: 8rem;
+}
+
 html,
 body {
   overflow-x: hidden;
-}
-
-.scrolling-box {
-  scroll-behavior: smooth;
 }
