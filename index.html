@@ -37,7 +37,7 @@
             <li class="header__main-nav-list-item"><a class="header__main-nav-link" href="#section-services">Services</a></li>
             <li class="header__main-nav-list-item"><a class="header__main-nav-link" href="#section-about">About</a></li>
             <li class="header__main-nav-list-item"><a class="header__main-nav-link" href="#section-contact">Contact us</a></li>
-            <li class="header__main-nav-list-item"><a class="header__main-nav-link" href="#section-contact">Careers</a></li>
+            <li class="header__main-nav-list-item"><a id="emp" class="header__main-nav-link" href="#popup">Careers</a></li>
           </ul>
         </nav>
   
@@ -293,9 +293,7 @@
       </main>
 
       <div class="footer__wrapper">
-
-        
-        <footer class="footer">
+        <footer class="footer" id="footer">
           <div class="footer__content-left">
             <a href="#">
               <img src="./img/logo.png" alt="Criqui Construction logo" class="footer__logo" />
@@ -332,6 +330,58 @@
               </div>
             </footer>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34529.70259513194!2d-95.64870271289023!3d38.479306314716446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b8d379b7bae263%3A0x9000a39257cdbd1c!2s32438%20S%20K31%20Hwy%2C%20Unincorporated%2C%20KS%2066510!5e0!3m2!1sen!2sus!4v1643748010765!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+        
+          <img
+            src="./img/employment.jpeg"
+            alt="Photo of construction site"
+            class="popup__img"
+          />
+    
+        </div>
+        <div class="popup__right">
+          <a href="" class="popup__close">&times;</a>
+          <h2 class="heading-secondary popup__heading">Employment</h2>
+          <div class="heading-divider popup__divider">&nbsp;</div>
+          <h3 class="heading-tertiary popup__subheading">
+            Rewarding career opportunities available
+          </h3>
+          <p class="popup__list-heading">Benefits include:</p>
+          <ul class="popup__list">
+            <li class="popup__list-item"><ion-icon
+              class="services__icon"
+              name="chevron-forward-outline"
+            ></ion-icon>
+              100% Employer-paid health insurance
+            </li>
+            <li class="popup__list-item"><ion-icon
+              class="services__icon"
+              name="chevron-forward-outline"
+            ></ion-icon>Paid sick leave</li>
+            <li class="popup__list-item"><ion-icon
+              class="services__icon"
+              name="chevron-forward-outline"
+            ></ion-icon>Paid vacation time</li>
+            <li class="popup__list-item"><ion-icon
+              class="services__icon"
+              name="chevron-forward-outline"
+            ></ion-icon>Retirement plan</li>
+            <li class="popup__list-item"><ion-icon
+              class="services__icon"
+              name="chevron-forward-outline"
+            ></ion-icon>Uniform service</li>
+          </ul>
+          <p class="popup__text">
+            Criqui Construction is an equal-opportunity employer. Interested in
+            joining our team? Contact us today!
+          </p>
+          <a href="#footer" class="btn popup__button">Get in touch</a>
+        </div>
+      </div>
     </div>
     <!-- </div> -->
   </body>

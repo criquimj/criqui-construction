@@ -63,3 +63,24 @@ allLinks.forEach((link) =>
     }
   })
 );
+
+const empButton = document.querySelector("#emp");
+const popup = document.querySelector("#popup");
+const popupContent = document.querySelector(".popup__content");
+const popupCloseBtn = document.querySelector(".popup__close");
+const popupButton = document.querySelector(".popup__button");
+
+empButton.addEventListener("click", () => {
+  popup.classList.add("visible");
+  popupContent.classList.add("visible");
+});
+
+popupCloseBtn.addEventListener("click", () => {
+  popup.classList.remove("visible");
+  popupContent.classList.remove("visible");
+});
+
+popupButton.addEventListener("click", () => {
+  popup.classList.remove("visible");
+  popupContent.classList.remove("visible");
+});
