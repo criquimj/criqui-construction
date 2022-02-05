@@ -1,28 +1,18 @@
 // MOBILE NAV OPEN/CLOSE
 const mobileNavButton = document.querySelector(".btn-mobile-nav");
+const headMainNav = document.querySelector(".header__main-nav");
 const headerEl = document.querySelector(".header");
 mobileNavButton.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
+
+  if (headerEl.classList.contains("nav-open")) {
+    headMainNav.addEventListener("click", () => {
+      headerEl.classList.remove("nav-open");
+    });
+  }
 });
 
 // STICKY NAVIGATION
-
-// const stickyNav = () => {
-//   const heroSection = document.querySelector(".hero");
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       const ent = entries[0];
-//       const navBar = document.querySelector(".header");
-
-//       !ent.isIntersecting
-//         ? navBar.classList.add("header--scrolling")
-//         : navBar.classList.remove("header--scrolling");
-//     },
-//     { root: null, threshold: 0, rootMargin: "500px" }
-//   );
-//   observer.observe(heroSection);
-// };
-// stickyNav();
 
 const stickyNav = () => {
   const heroSection = document.querySelector(".hero");
@@ -41,6 +31,7 @@ const stickyNav = () => {
 };
 stickyNav();
 
+// SMOOTH SCROLLING
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach((link) =>
@@ -70,17 +61,32 @@ const popupContent = document.querySelector(".popup__content");
 const popupCloseBtn = document.querySelector(".popup__close");
 const popupButton = document.querySelector(".popup__button");
 
-empButton.addEventListener("click", () => {
+const openModal = () => {
   popup.classList.add("visible");
   popupContent.classList.add("visible");
+
+  document.addEventListener("keydown", (evt) => {
+    console.log(evt);
+    if (evt.key === "Escape") closeModal();
+  });
+};
+const closeModal = () => {
+  popup.classList.remove("visible");
+  popupContent.classList.remove("visible");
+};
+
+empButton.addEventListener("click", () => {
+  openModal();
+});
+
+popup.addEventListener("click", () => {
+  closeModal();
 });
 
 popupCloseBtn.addEventListener("click", () => {
-  popup.classList.remove("visible");
-  popupContent.classList.remove("visible");
+  closeModal();
 });
 
 popupButton.addEventListener("click", () => {
-  popup.classList.remove("visible");
-  popupContent.classList.remove("visible");
+  closeModal();
 });
