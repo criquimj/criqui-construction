@@ -66,7 +66,6 @@ const openModal = () => {
   popupContent.classList.add("visible");
 
   document.addEventListener("keydown", (evt) => {
-    console.log(evt);
     if (evt.key === "Escape") closeModal();
   });
 };
