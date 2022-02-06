@@ -259,7 +259,7 @@ const displayOverlay = document.querySelector(".services__display-overlay");
 
 allServiceButtons.map((btn) =>
   btn.addEventListener("click", () => {
-    let curBackgroundImage = `url(./img/${btn.id}.jpeg)`;
+    let curBackgroundImage = `url(./img/${btn.id}.webp)`;
     servicesDisplay.style.backgroundImage = curBackgroundImage;
 
     let htmlContent = "";

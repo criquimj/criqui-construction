@@ -464,7 +464,8 @@ body {
         height: 55rem; } }
     @media only screen and (max-width: 25em) {
       .popup__right {
-        padding: 2rem 2rem; } }
+        padding: 2rem 2rem;
+        height: 50rem; } }
   .popup__heading {
     font-size: 3rem;
     letter-spacing: 1rem;
@@ -529,7 +530,7 @@ body {
   overflow-x: hidden;
   height: 95vh;
   width: 100vw;
-  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/hero.jpeg);
+  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/hero.webp);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
@@ -597,7 +598,7 @@ body {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     height: 55rem;
-    background-image: url(../../img/exc-btn.jpeg);
+    background-image: url(../../img/exc-btn.webp);
     background-size: cover;
     background-repeat: no-repeat; }
     @media only screen and (max-width: 37.5em) {
@@ -759,7 +760,7 @@ body {
         background-color: #d6ad33;
         color: #2e2d26; }
     .contact__form__img-box {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../img/contact.jpeg");
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../img/contact.webp");
       background-size: cover;
       background-position: center; }
       @media only screen and (max-width: 53.12em) {
