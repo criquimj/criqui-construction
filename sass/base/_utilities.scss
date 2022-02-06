@@ -15,6 +15,12 @@
   font-weight: 100;
   font-size: 2.5rem !important;
   // color: $color-primary !important;
+
+  @include respond(md-phone) {
+    &__second {
+      margin-top: 2rem;
+    }
+  }
 }
 
 .heading-divider {
@@ -22,4 +28,8 @@
   height: 3px;
   background-color: $color-primary;
   margin: 1.5rem auto;
+
+  @include respond(md-phone) {
+    width: 67%;
+  }
 }

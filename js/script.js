@@ -12,7 +12,7 @@ for excavation, demolition, site preparation and drainage.
       class="services__icon"
       name="chevron-forward-outline"
     ></ion-icon>
-    Excavation, grading and slope work
+    Excavation, grading & slope work
   </li>
   <li class="services__list-item">
     <ion-icon
@@ -49,7 +49,7 @@ for excavation, demolition, site preparation and drainage.
       class="services__icon"
       name="chevron-forward-outline"
     ></ion-icon
-    >Road and highway construction
+    >Road & highway construction
   </li>
   <li class="services__list-item">
     <ion-icon
@@ -123,7 +123,7 @@ We are proud to promote environmental sustainability by offering our services an
   </li>
 </ul>
 <ul class="services__list">
-  <li class="services__list-item heading--upper">
+  <li class="services__list-item heading--upper heading--upper__second">
     Wind Farm
   </li>
   <li class="services__list-item">
@@ -198,7 +198,7 @@ Criqui Construction has contracted for BNSF Railway for over 20 years [since 19X
       class="services__icon"
       name="chevron-forward-outline"
     ></ion-icon>
-    ROW clearing and grading
+    Right-of-way clearing & grading
   </li>
   <li class="services__list-item">
     <ion-icon
