@@ -313,6 +313,10 @@ body {
   background-color: #1e1e1e;
   gap: 7rem;
   margin-top: 10rem; }
+  .footer__icon {
+    font-size: 2.25rem;
+    color: #d6ad33;
+    margin-right: 0.75rem; }
   .footer__divider {
     height: 20rem;
     width: 2px;
