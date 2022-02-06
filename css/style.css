@@ -140,12 +140,18 @@ body {
   text-transform: uppercase;
   font-weight: 100;
   font-size: 2.5rem !important; }
+  @media only screen and (max-width: 37.5em) {
+    .heading--upper__second {
+      margin-top: 2rem; } }
 
 .heading-divider {
   width: 40%;
   height: 3px;
   background-color: #d6ad33;
   margin: 1.5rem auto; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-divider {
+      width: 67%; } }
 
 .btn:link, .btn:visited {
   /* set to inline-block because it's an anchor element */
@@ -312,7 +318,8 @@ body {
   padding: 7rem 2rem;
   background-color: #1e1e1e;
   gap: 7rem;
-  margin-top: 10rem; }
+  margin-top: 10rem;
+  align-items: center; }
   .footer__icon {
     font-size: 2.25rem;
     color: #d6ad33;
@@ -373,13 +380,17 @@ body {
     padding: 0.5rem; }
   .footer__address {
     font-size: 1.75rem;
-    line-height: 2; }
+    line-height: 2;
+    display: flex;
+    align-items: center; }
   .footer__contact-link:link, .footer__contact-link:visited {
     line-height: 2;
     font-size: 1.75rem;
     text-decoration: none;
     color: #fff;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    display: flex;
+    align-items: center; }
   .footer__contact-link:hover, .footer__contact-link:active {
     color: #d6ad33; }
 
@@ -437,7 +448,7 @@ body {
         height: 55rem; } }
     @media only screen and (max-width: 25em) {
       .popup__content {
-        height: 63rem; } }
+        height: 57rem; } }
   .popup__left {
     overflow: hidden;
     align-self: stretch; }
@@ -489,7 +500,8 @@ body {
       .popup__list-item {
         font-size: 1.5rem; } }
   .popup__text {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 100;
     margin-bottom: 2rem; }
   .popup__button:link, .popup__button:visited {
     text-decoration: none;
@@ -520,8 +532,7 @@ body {
   background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/hero.jpeg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  margin-bottom: 9rem; }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   @media only screen and (max-width: 37.5em) {
     .hero {
       height: 85vh; } }
@@ -541,7 +552,8 @@ body {
   margin: 0 auto; }
   .services__description {
     font-size: 2.1rem;
-    text-align: center; }
+    text-align: center;
+    padding: 0 1rem; }
   .services__heading-box {
     margin-bottom: 3rem; }
   .services__selector {
@@ -586,14 +598,19 @@ body {
     border-bottom-right-radius: 3px;
     height: 55rem;
     background-image: url(../../img/exc-btn.jpeg);
-    background-size: cover; }
+    background-size: cover;
+    background-repeat: no-repeat; }
     @media only screen and (max-width: 37.5em) {
       .services__display {
-        height: 80rem; } }
+        height: fit-content;
+        background-position-x: 50%; } }
   .services__display-overlay {
     height: 100%;
     background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     padding: 3rem 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .services__display-overlay {
+        padding: 2rem 1rem; } }
   .services__display-heading {
     color: #fff;
     font-size: 3.75rem;
@@ -605,9 +622,6 @@ body {
     color: #fff;
     font-size: 1.9rem;
     margin-bottom: 1.5rem; }
-    @media only screen and (max-width: 37.5em) {
-      .services__text-detail {
-        font-size: 1.6rem; } }
   .services__list-container {
     margin-top: 7rem;
     display: flex;
@@ -633,7 +647,7 @@ body {
     font-size: 2.2rem; }
     @media only screen and (max-width: 53.12em) {
       .services__list-item {
-        font-size: 1.75rem; } }
+        font-size: 2rem; } }
   .services__icon {
     color: #d6ad33; }
 
@@ -651,7 +665,8 @@ body {
     margin-bottom: 3rem; }
   .contact__description {
     font-size: 2.1rem;
-    text-align: center; }
+    text-align: center;
+    padding: 0 1rem; }
   .contact__text-box {
     color: #fff;
     padding: 4.8rem 6.4rem 6.4rem 6.4rem; }
@@ -668,7 +683,7 @@ body {
     @media only screen and (max-width: 53.12em) {
       .contact__form-box {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 3fr;
+        grid-template-rows: 1fr;
         border-radius: none;
         grid-auto-rows: minmax(min-content, max-content); } }
     .contact__form-box__form-heading {
@@ -685,14 +700,14 @@ body {
   .contact__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
     column-gap: 3.2rem;
     row-gap: 2.4rem;
     font-family: "Lato"; }
     @media only screen and (max-width: 37.5em) {
       .contact__form {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr) 2fr 1fr; } }
+        grid-template-rows: repeat(3, 1fr) 2fr 1fr; } }
     @media only screen and (max-width: 37.5em) {
       .contact__form__full-name--group {
         grid-row: 1 / span 1;
@@ -700,8 +715,10 @@ body {
       .contact__form__email--group {
         grid-row: 2 / span 1;
         grid-column: 1 / -1; }
+      .contact__form__phone--group {
+        grid-row: 3 / span 1; }
       .contact__form__message--group {
-        grid-row: 3 / span 1;
+        grid-row: 4 / span 1;
         grid-column: 1 / -1; } }
     .contact__form__message--group {
       grid-column: 1 / -1; }
@@ -734,7 +751,7 @@ body {
       @media only screen and (max-width: 37.5em) {
         .contact__form-btn {
           grid-column: 1 / -1;
-          grid-row: 4 / span 1; } }
+          grid-row: 5 / span 1; } }
       .contact__form-btn:hover {
         background-color: #2e2d26;
         color: #fff; }
@@ -747,8 +764,7 @@ body {
       background-position: center; }
       @media only screen and (max-width: 53.12em) {
         .contact__form__img-box {
-          grid-row: 1 / span 1;
-          height: 20rem; } }
+          display: none; } }
   .contact__form label {
     display: block;
     font-size: 1.6rem;
@@ -781,7 +797,8 @@ body {
     margin-bottom: 3rem; }
   .about__description {
     font-size: 2.1rem;
-    text-align: center; }
+    text-align: center;
+    padding: 0 1rem; }
   .about__main-content {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
@@ -802,7 +819,8 @@ body {
       margin-bottom: 2rem; }
     @media only screen and (max-width: 53.12em) {
       .about__text-content {
-        font-size: 1.9rem; } }
+        font-size: 1.9rem;
+        font-weight: 400; } }
   .about__img-container {
     border-radius: 3px;
     padding: 2rem;

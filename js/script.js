@@ -123,7 +123,7 @@ We are proud to promote environmental sustainability by offering our services an
   </li>
 </ul>
 <ul class="services__list">
-  <li class="services__list-item heading--upper">
+  <li class="services__list-item heading--upper heading--upper__second">
     Wind Farm
   </li>
   <li class="services__list-item">
