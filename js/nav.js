@@ -1,3 +1,5 @@
+"use strict";
+
 // MOBILE NAV OPEN/CLOSE
 const mobileNavButton = document.querySelector(".btn-mobile-nav");
 const headMainNav = document.querySelector(".header__main-nav");

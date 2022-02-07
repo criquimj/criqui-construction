@@ -1,3 +1,5 @@
+"use strict";
+
 // GET DYNAMIC COPYRIGHT DATE
 
 const copyrightYearEl = document.querySelector(".year");

@@ -1,3 +1,5 @@
+"use strict";
+
 const excavationHtml = `<h3 class="heading-tertiary services__display-heading">
 Excavation & Demolition
 </h3>
